@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="form-container">
+        <h1 id="title">Free Code Camp</h1>
+        <p id="description">Survey for <i>Code Editor</i> usage amoung campers</p>
+        <form action="#" id="survey-form">
+            <label for="name-label" id="name-label">Name</label>
+            <input type="text" required id="name-label" placeholder="Enter Your Name">
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" required id="email" placeholder="Enter Your Email">
+
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" min="1" max="150" placeholder="Enter Your Age">
+
+            <label for="dropdown">Select Your Favorite Code Editor</label>
+            <select name="dropdown" id="dropdown">
+                <option value="vs-code">VS Code</option>
+                <option value="atom">Atom</option>
+                <option value="sublime">Sublime Text</option>
+                <option value="notepladplus">Notepad ++</option>
+                <option value="vim">Vim</option>
+                <option value="brackets">Brackets</option>
+                <option value="emacs">Emacs</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="ifother">Specify if Other</label>
+            <input type="text" id="ifother" placeholder="optional">
+
+            <!-- main features -->
+            <div id="main-features">
+                Main features you like about your code
+                editor</div>
+            <label for="extensions"><input type="radio" id="extensions" value="extensions" name="feature"> Extensions
+                and
+                Plugins</label>
+            <label for="shortcuts"><input type="radio" id="shortcuts" name="feature" value="shortcuts"> Keyboard
+                shortcuts</label>
+            <label for="lightweight"><input type="radio" id="lightweight" name="feature" value="lightweight">
+                Lightweight</label>
+            <label for="codeCompletion"><input type="radio" id="codeCompletion" name="feature" value="codeCompletion">
+                Intelligent Code Completion</label>
+
+            <!-- platforms -->
+            <div id="platforms">Your Platforms</div>
+            <label for="mac"><input type="checkbox" id="mac" name="feature" value="mac">Mac OS</label>
+            <label for="windows"><input type="checkbox" id="windows" name="feature" value="win">Windows</label>
+            <label for="web"><input type="checkbox" id="web" name="feature" value="web">Web Based</label>
+            <label for="bsd"><input type="checkbox" id="bsd" name="feature" value="bsd">BSD</label>
+            <label for="linux"><input type="checkbox" id="linux" name="feature" value="linux">Linux</label>
+            <label for="solaris"><input type="checkbox" id="solaris" name="feature" value="solaris">Solaris</label>
+            <label id="comments-label" for="comments">Comments..</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <div class="submit-div">
+                <button id="submit">Submit Survey</button>
+            </div>
+            <div style="margin-top: 1rem; height: 10px;"></div>
+        </form>
+    </section>
+</body>
+
+</html>
